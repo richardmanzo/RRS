@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <title>RRS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Reservations</a></li>
+            <li><a href="#">Guidelines</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Resort</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="info.html">Reservations</a></li>
+            <li class="hideOnMobile"><a href="#">Guidelines</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Slider -->
+    <div class="slider">
+        <!-- List of Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="Images/img1.png" alt="pool">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Captain M's Resort</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img2.png" alt="pool">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 02</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img3.png" alt="pool">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 03</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img4.png" alt="pool">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 04</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img5.png" alt="pool">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 05</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Button Arrows  -->
+         <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+         </div>
+         <!-- Thumbnail -->
+          <div class="thumbnail">
+            <div class="item active">
+                <img src="Images/img1.png" alt="pool">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img2.png" alt="pool">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img3.png" alt="pool">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img4.png" alt="pool">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/img5.png" alt="">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+          </div>
+          <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" class="modal-image" src="/api/placeholder/700/300" alt="Pool View">
+                <div class="reservation-details">
+                    <div class="rate-card">
+                        <h3>Swimming Rates</h3>
+                        <ul class="rate-list">
+                            <li>Day Swimming (8AM - 5PM): ₱150/person</li>
+                            <li>Night Swimming (6PM - 10PM): ₱200/person</li>
+                            <li>Children (5-12 years): ₱100/person</li>
+                            <li>Infants (0-4 years): Free</li>
+                        </ul>
+                        <button class="book-button">Book Swimming</button>
+                    </div>
+                    <div class="rate-card">
+                        <h3>Overnight Stay</h3>
+                        <ul class="rate-list">
+                            <li>Standard Room: ₱2,500/night</li>
+                            <li>Deluxe Room: ₱3,500/night</li>
+                            <li>Family Suite: ₱4,500/night</li>
+                            <li>Villa with Pool: ₱6,500/night</li>
+                        </ul>
+                        <button class="book-button">Book Overnight</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
